@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Services - Mohd Gulfam Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" />
+    <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid nav-section border-0">
+        <nav class="navbar navbar-light">
+            <div class="navbar-nav flex-column">
+                <a href="{{ url_for('index') }}" class="nav-item nav-link"><span class="fa fa-home"></span> Home</a>
+                <a href="{{ url_for('about') }}" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
+                <a href="{{ url_for('service') }}" class="nav-item nav-link active"><span class="fab fa-servicestack"></span> Service</a>
+                <a href="{{ url_for('contact') }}" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid" id="pigraService">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="service-header h-100 bg-dark pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                            <p class="text-white sub-title">My Services</p>
+                            <h1 class="display-6 text-white mb-0">Solutions I provide for you</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="service-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-2">
+                                            <i class="fab fa-java fa-4x text-primary"></i>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <h4 class="mb-0">Java Development</h4>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <p class="mb-0">Building robust Desktop Applications using Java Swing and AWT, focused on functional GUI systems.</p>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p><i class="fa fa-check me-2"></i> Swing/AWT GUI</p>
+                                            <p><i class="fa fa-check me-2"></i> MySQL Integration</p>
+                                            <p class="mb-0"><i class="fa fa-check me-2"></i> OOPs Concepts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-2">
+                                            <i class="fas fa-brain fa-4x text-primary"></i>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <h4 class="mb-0">AI & Deep Learning</h4>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <p class="mb-0">Creating predictive models using neural networks for healthcare and data analysis.</p>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p><i class="fa fa-check me-2"></i> CSV Data Handling</p>
+                                            <p><i class="fa fa-check me-2"></i> Model Prediction</p>
+                                            <p class="mb-0"><i class="fa fa-check me-2"></i> Python Scripting</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-2">
+                                            <i class="fas fa-code fa-4x text-primary"></i>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <h4 class="mb-0">MERN Development</h4>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <p class="mb-0">Full-stack web solutions including modern clones and real-time trading dashboards.</p>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p><i class="fa fa-check me-2"></i> React & Node.js</p>
+                                            <p><i class="fa fa-check me-2"></i> MongoDB Storage</p>
+                                            <p class="mb-0"><i class="fa fa-check me-2"></i> API Integration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

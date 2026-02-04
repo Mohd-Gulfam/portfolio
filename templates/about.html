@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Me - Personal Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" />
+    <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid nav-section border-0">
+        <nav class="navbar navbar-light">
+            <div class="navbar-nav flex-column">
+                <a href="{{ url_for('index') }}" class="nav-item nav-link"><span class="fa fa-home"></span> Home</a>
+                <a href="{{ url_for('about') }}" class="nav-item nav-link active"><span class="far fa-address-card"></span> About</a>
+                <a href="#pigraService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Service</a>
+                <a href="#pigraPortfolio" class="nav-item nav-link"><span class="fa fa-blog"></span> Portfolio</a>
+                <a href="{{ url_for('contact') }}" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid" id="pigraAbout">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 col-lg-3">
+                    <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                            <p class="text-white sub-title">About Me</p>
+                            <h1 class="display-6 text-white mb-0">BTech CS Student & AI Enthusiast</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="about-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-5">
+                            <div class="col-xl-5">
+                                <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
+                                    <img src="{{ url_for('static', filename='img/about.jpg') }}" class="img-fluid w-100" alt="Mezbah">
+                                    <div class="sosial-icon">
+                                        <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                        <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-github text-white"></i></a>
+                                        <a class="btn btn-primary btn-sm-square mb-0" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
+                                <h4 class="mb-4">Third Year BTech Computer Science Student</h4>
+                                <p class="mb-4">I am deeply passionate about <strong>Deep Learning</strong> and <strong>Java Development</strong>. My academic journey has allowed me to build complex systems like an <strong>Airline Reservation System</strong> and research-driven projects like <strong>Breast Cancer Prediction</strong> using neural networks.</p>
+                                <div class="row g-4 mb-4">
+                                    <div class="col-6">
+                                        <p><strong class="fw-bold text-dark">Degree:</strong> BTech CS (3rd Year)</p>
+                                        <p><strong class="fw-bold text-dark">Expertise:</strong> Java, Python, DL</p>
+                                        <p class="mb-0"><strong class="fw-bold text-dark">Location:</strong> India</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p><strong class="fw-bold text-dark">Email:</strong> your-email@example.com</p>
+                                        <p><strong class="fw-bold text-dark">Freelance:</strong> Available</p>
+                                        <p class="mb-0"><strong class="fw-bold text-dark">Status:</strong> Seeking Internship</p>
+                                    </div>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <h5 class="mb-3">Technical Skills</h5>
+                                        <div class="d-flex flex-wrap">
+                                            <span class="badge bg-primary m-1 p-2">Java (Swing/AWT)</span>
+                                            <span class="badge bg-primary m-1 p-2">Deep Learning (CNN/RNN)</span>
+                                            <span class="badge bg-primary m-1 p-2">Python</span>
+                                            <span class="badge bg-primary m-1 p-2">Flask</span>
+                                            <span class="badge bg-primary m-1 p-2">MySQL</span>
+                                            <span class="badge bg-primary m-1 p-2">Data Science</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <a href="#" class="btn btn-primary py-2 px-4"> <i class="fas fa-download me-2"></i>Download Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer bg-dark py-4">
+        <div class="container text-center">
+            <p class="text-white mb-0">&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
